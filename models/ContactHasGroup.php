@@ -18,6 +18,6 @@ class ContactHasGroup extends ActiveRecord
 
     public function getContact()
     {
-        return $this->hasOne(Contact::className(), ['id' => 'contact_id']);
+        return $this->hasOne(Contact::class, ['id' => 'contact_id']);
     }
 }
